@@ -38,9 +38,6 @@ ways = {}
 def getWays( i , s):
 	global ways
 
-
-
-
 	if s > targ:
 		return 0
 
@@ -50,13 +47,11 @@ def getWays( i , s):
 		# print 'ticket found'
 		return 1
 		
-
 	if i > N:
 		return 0
 
 	if (s,i) in ways:
 		return ways[s,i]
-
 
 	ans=0
 	for digit in range(10):
